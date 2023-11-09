@@ -6,11 +6,17 @@
     'version': '0.0.1.',
     'license': 'OPL-1', 
     'images': ['static/description/icon.png'],
-    'application': True,
-    'installable': True,
     'website': 'https://github.com/william1089/technical_training_odoo.git',
     'description': """Motorcycle Registry""",
-    'demo': [
-        'demo/motorcycle_demo.xml',
+    'data': [
+        'security/'
+        
     ],
+    'demo': [
+        'securtiy/registry_groups.xml',
+        'security/motorcycle_security.xml',
+        'security/ir.model.access.csv',
+    ],
+    'application': True,
+    'installable': True,
 }
