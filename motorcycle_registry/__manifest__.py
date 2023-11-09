@@ -10,4 +10,7 @@
     'installable': True,
     'website': 'https://github.com/william1089/technical_training_odoo.git',
     'description': """Motorcycle Registry""",
+    'demo': [
+        'demo/motorcycle_demo.xml',
+    ],
 }
