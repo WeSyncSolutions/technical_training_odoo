@@ -9,13 +9,12 @@
     'website': 'https://github.com/william1089/technical_training_odoo.git',
     'description': """Motorcycle Registry""",
     'data': [
-        'security/'
-        
-    ],
-    'demo': [
         'security/registry_groups.xml',
         'security/motorcycle_security.xml',
-        'security/ir.model.access.csv',
+        'security/ir.model.access.csv',        
+    ],
+    'demo': [
+        'demo/motorcycle_demo.xml',
     ],
     'application': True,
     'installable': True,
