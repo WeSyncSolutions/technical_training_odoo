@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<odoo>
-
-    <record id="motorcycle_registry_groups_category" model="ir.module.category">
-        <field name="name">Motorcycle Registry</field>
-        <field name="description">Holds all the different Motorcycle Registry Groups</field>
-    </record>
-
-</odoo>
