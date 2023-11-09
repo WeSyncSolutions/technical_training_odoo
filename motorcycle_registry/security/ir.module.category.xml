@@ -5,6 +5,5 @@
         <field name="name">Motorcycle Registry</field>
         <field name="description">Holds all the different Motorcycle Registry Groups</field>
     </record>
-        <field name="category_id" ref="motorcycle_registry_groups_category"/>
 
 </odoo>
