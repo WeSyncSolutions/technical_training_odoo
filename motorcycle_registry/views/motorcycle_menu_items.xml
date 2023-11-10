@@ -18,6 +18,7 @@
             sequence="1"
             web_icon="motorcycle_registry,static/description/icon.png">
         <menuitem id="menu_motorcycle_registry_sub" name="Motorcycles" sequence="1"/>
-            <menuitem id="menu_registry" name="Registry" sequence="2" action="motorcycle_list_action"/>    
+            <menuitem id="menu_registry" name="Registry" sequence="1" action="menu_motorcycle_registry_sub"/>
+            <menuitem id="menu_registry" name="Motorcycles Registry" sequence="2" action="motorcycle_list_action"/>     
     </menuitem>
 </odoo>
