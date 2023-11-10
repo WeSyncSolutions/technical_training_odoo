@@ -18,3 +18,4 @@ class MotorcyleRegistry(models.Model):
     registry_number = fields.Char('Registry Number', copy=False, required=True, readonly=True, default='New')
     vin = fields.Char(string='VIN', required=True)
     picture = fields.Image (string='Photograph')
+    active = fields.Boolean(default=True)
