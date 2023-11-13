@@ -7,7 +7,7 @@
             <form string="Motorcycle Registry">
                 <header></header>
                 <sheet>
-                    <h1><field name="name"/></h1>
+                    <h1><field name="registry_number"/></h1>
                     <group>
                         <group>
                             <separator string="Motorcycle Registry Settings"/>
