@@ -11,18 +11,18 @@
                     <group>
                         <group>
                             <separator string="Motorcycle Registry Settings"/>
-                            <field name="registry_number" />
+                            <field name="registry_number"/>
                             <field name="active" />
                         </group>
                         <group>
-                            <separator string="Owner Data">
+                            <separator string="Owner Data"/>
                             <field name="owner_name"/>
                             <field name="owner_id"/>
                         </group>
                     </group>
                     <notebook>
-                        <page name="certificate_title" string="Certificate Title">
-                            <field name="certificate_title" />                            
+                        <page string="Certificate Title">
+                            <field name="certificate_title"/>                            
                         </page>
                     </notebook>
                 </sheet>
