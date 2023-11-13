@@ -16,8 +16,8 @@
                         </group>
                         <group>
                             <separator string="Owner Data"/>
-                            <field name="owner_name"/>
-                            <field name="owner_id"/>
+                            <field name="first_name"/>
+                            <field name="last_name"/>
                         </group>
                     </group>
                     <notebook>
