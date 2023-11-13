@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <record id="motorcycle_registry_view_form" model="ir.ui.view">
-        <field name="name">motorcycle.registry.view.form</field>
+    <record id="motorcycle_view_form" model="ir.ui.view">
+        <field name="name">motorcycle.view.form</field>
         <field name="model">motorcycle.registry</field>
         <field name="arch" type="xml">
             <form string="Motorcycle Registry">
@@ -11,7 +11,7 @@
                     <group>
                         <group>
                             <separator string="Motorcycle Registry Settings"/>
-                            <field name="registry_number"/>
+                            <field name="license_plate"/>
                             <field name="active"/>
                         </group>
                         <group>
