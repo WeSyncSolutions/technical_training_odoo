@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="motorcyle_registry_view_form" model="ir.ui.view">
+        <field name="name">motorcyle.registry.view.form</field>
+        <field name="model">motorcyle.registry</field>
+        <field name="arch" type="xml">
+            <form string="Motorcycle Registry">
+                <header></header>
+                <sheet>
+                    <h1><field name="name"/></h1>
+                    <group>
+                        <group>
+                            <separator string="Motorcycle Registry Settings"/>
+                            <field name="registry_number" />
+                            <field name="active" />
+                        </group>
+                        <group>
+                            <separator string="Owner Data">
+                            <field name="owner_name"/>
+                            <field name="owner_id"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page name="certificate_title" string="Certificate Title">
+                            <field name="certificate_title" />                            
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>
