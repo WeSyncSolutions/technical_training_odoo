@@ -46,7 +46,7 @@
         </field>
     </record>
 
-    <record id="motorcycle_registry__view_search" model="ir.ui.view">
+    <record id="motorcycle_registry_view_search" model="ir.ui.view">
         <field name="name">motorcycle.registry.view.search</field>
         <field name="model">motorcycle.registry</field>
         <field name="arch" type="xml">
