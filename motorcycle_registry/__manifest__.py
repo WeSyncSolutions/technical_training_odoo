@@ -13,7 +13,7 @@
         'security/motorcycle_security.xml',
         'security/ir.model.access.csv',
         'views/motorcycle_menu_items.xml',
-        'views/motorcycle_registry_view.xml',
+        'views/motorcycle_registry_views.xml',
     ],
     'demo': [
         'demo/motorcycle_demo.xml',
