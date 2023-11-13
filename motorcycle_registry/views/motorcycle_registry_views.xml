@@ -54,9 +54,10 @@
                 <field name="registry_number" />
                 <field name="vin"/>
                 <field name="last_name" />
-                <field name="license_plate" />                
+                <field name="license_plate" />   
+                <filter name="filter_registry_date" date="registry_date" string="Registration Date"/>
+                <filter name="groupby_registry_date" string="Registration Date"/>
             </search>
         </field>
     </record>
-
 </odoo>
