@@ -10,18 +10,20 @@
                     <h1><field name="registry_number"/></h1>
                     <group>
                         <group>
-                            <separator string="Motorcycle Registry Settings"/>
-                            <field name="license_plate"/>
-                            <field name="active"/>
+                            <separator string="Motorcycle Information"/>
+                            <field name="registry_date"/>
+                            <field name="vin"/>
+                            <field name="current_mileage" />
+                            <field name="license_plate" />
                         </group>
                         <group>
-                            <separator string="Owner Data"/>
+                            <separator string="Other Information"/>
                             <field name="first_name"/>
                             <field name="last_name"/>
                         </group>
                     </group>
                     <notebook>
-                        <page string="Certificate of Title">
+                        <page string="Related Documents">
                             <field name="certificate_title"/>                            
                         </page>
                     </notebook>
