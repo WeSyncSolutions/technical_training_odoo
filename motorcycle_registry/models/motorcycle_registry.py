@@ -4,6 +4,7 @@ from odoo.exceptions import ValidationError
 class MotorcycleRegistry(models.Model):
     _name = 'motorcycle.registry'
     _description = 'Motorcycle Registry'
+    _rec_name='registry_number'
     
     name = fields.Char(string="Registry")
     
