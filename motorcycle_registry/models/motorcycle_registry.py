@@ -3,9 +3,10 @@ from odoo.exceptions import ValidationError
 
 class MotorcycleRegistry(models.Model):
     _name = 'motorcycle.registry'
-    _description = 'Motorcycle Registry'
+    _description = 'Motorcycle Registry'   
     
-    #name = fields.Char(string="Registry")
+    name = fields.Char(string="Motorcycle Registry Name")
+    
     registry_number = fields.Char(string='Registry Number', default="MRN0000", copy=False, required=True, readonly=True)
     certificate_title = fields.Binary(string='Certificate of Title')
     current_mileage = fields.Float(string='Current Mileage')
@@ -20,6 +21,6 @@ class MotorcycleRegistry(models.Model):
     @api.model_create_multi
     def create(self, vals_list):
         for vals in vals_list:
-            if vals.get('registry_number',('MRN0000')) == ('MRN0000'):
-                vals['registry_number'] = self.env['ir.sequence'].next_by_code('registry.number') or 'MRN0000'
-        return super().create(vals_list)  
+            if vals.get('registry_number', ('MRN0000')) == ('MRN0000'):
+                vals['registry_number'] = self.env['ir.sequence'].next_by_code('registry.number')
+        return super().create(vals_list)
