@@ -1,5 +1,6 @@
-from odoo import api, fields, models, re
+from odoo import api, fields, models
 from odoo.exceptions import ValidationError
+import re
 
 class MotorcycleRegistry(models.Model):
     _name = 'motorcycle.registry'
