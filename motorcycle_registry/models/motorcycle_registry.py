@@ -5,7 +5,7 @@ class MotorcycleRegistry(models.Model):
     _name = 'motorcycle.registry'
     _description = 'Motorcycle Registry'   
     
-    name = fields.Char(string="Motorcycle Registry Name")
+    name = fields.Char(string="Motorcycle Registry")
     
     registry_number = fields.Char(string='Registry Number', default="MRN0000", copy=False, required=True, readonly=True)
     certificate_title = fields.Binary(string='Certificate of Title')
