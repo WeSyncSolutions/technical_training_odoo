@@ -9,11 +9,12 @@ class MotorcycleRegistry(models.Model):
     
     registry_number = fields.Char(string='Registry Number', default="MRN0000", copy=False, required=True, readonly=True)
     
-    @api.model
-    def create(self, vals):
-        if vals.get('registry_number',('MRN0000')) == ('MRN0000'):
-            vals['registry_number'] = self.env['ir.sequence'].next_by_code('registry_sequence')
-            return super().create(vals)       
+    @api.model_create_multi
+    def create(self, vals_list):
+        for vals in vals_list:
+            if vals.get('registry_number',('MRN0000')) == ('MRN0000'):
+                vals['registry_number'] = self.env['ir.sequence'].next_by_code('registry_sequence')
+        return super().create(vals_list)       
     
     certificate_title = fields.Binary(string='Certificate of Title')
     current_mileage = fields.Float(string='Current Mileage')
