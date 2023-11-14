@@ -22,5 +22,5 @@ class MotorcycleRegistry(models.Model):
     def create(self, vals_list):
         for vals in vals_list:
             if vals.get('registry_number',('MRN0000')) == ('MRN0000'):
-                vals['registry_number'] = self.env['ir.sequence'].next_by_code('registry_sequence')
+                vals['registry_number'] = self.env['ir.sequence'].next_by_code('registry.number')
         return super().create(vals_list)  
