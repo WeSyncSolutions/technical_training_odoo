@@ -19,8 +19,8 @@
                         <group>
                             <separator string="Other Information"/>
                             <field name="owner_id"/>
-                            <field name="first_name"/>
-                            <field name="last_name"/>
+                            <!--field name="first_name"/>
+                            <field name="last_name"/-->
                         </group>
                     </group>
                     <notebook>
@@ -41,8 +41,9 @@
                 <field name="registry_number" />
                 <field name="vin" />
                 <field name="license_plate" />
-                <field name="first_name" />
-                <field name="last_name" />                
+                <field name="owner_id"/>
+                <!--field name="first_name" />
+                <field name="last_name" /-->                
             </tree>
         </field>
     </record>
@@ -54,10 +55,16 @@
             <search>
                 <field name="registry_number" />
                 <field name="vin"/>
-                <field name="last_name" />
+                <field name="owner_id"/>
+                <!--field name="last_name" /-->
                 <field name="license_plate" />   
                 <filter name="filter_registry_date" date="registry_date" string="Registration Date"/>
                 <filter name="groupby_registry_date" string="Registration Date" context="{'group_by':'registry_date:day'}"/>
+                <searchpanel>
+                    <field name="license_plate" select="multi" enable_counters="1"/>                    
+                    <field name="vin" select="multi" enable_counters="1"/>
+                    <field name="owner_id"/>
+                </searchpanel>                
             </search>
         </field>
     </record>
