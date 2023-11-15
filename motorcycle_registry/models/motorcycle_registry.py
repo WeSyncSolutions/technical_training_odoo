@@ -21,6 +21,8 @@ class MotorcycleRegistry(models.Model):
     picture = fields.Image (string='Photograph')
     active = fields.Boolean(default=True)
     
+    owner_id = fields.Many2one(comodel_name="res.users", string='Motorcycle Registry', ondelete='restrict', required=True)
+    
        
     @api.model_create_multi
     def create(self, vals_list):
