@@ -6,21 +6,21 @@
             <field name="last_name">Roncancio</field>
             <field name="current_mileage">5670</field>
             <field name="registry_number">GXR250SF</field>
-            <field name="vin">PJH058D</field>        
+            <field name="vin">KAIN220M00023</field>        
         </record>
         <record id="registry_02" model="motorcycle.registry">
             <field name="first_name">Natalia</field>
             <field name="last_name">Bettin</field>
             <field name="current_mileage">2000</field>
             <field name="registry_number">181997NT</field>
-            <field name="vin">SLJ1997</field>        
+            <field name="vin">KAUK21XL84732</field>        
         </record>
         <record id="registry_03" model="motorcycle.registry">
             <field name="first_name">Andres</field>
             <field name="last_name">Medina</field>
             <field name="current_mileage">12034</field>
             <field name="registry_number">RE350023</field>
-            <field name="vin">MDESTHJ45</field>        
+            <field name="vin">KAIN230M10223</field>        
         </record>       
     </data>
 </odoo>
