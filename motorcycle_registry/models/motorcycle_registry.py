@@ -21,7 +21,25 @@ class MotorcycleRegistry(models.Model):
     picture = fields.Image (string='Photograph')
     active = fields.Boolean(default=True)
     
-    owner_id = fields.Many2one(comodel_name="res.users", string='Owner', ondelete='restrict', required=True)
+    owner_id = fields.Many2one(comodel_name="res.partner", string='Owner', ondelete='restrict', required=True)
+    owner_email = fields.Char(string='Owner Email', related='owner_id.email', readonly=True)
+    owner_phone = fields.Char(string='Owner Phone', related='owner_id.phone', readonly=True)
+    
+    make = fields.Char(string='Make', compute='_compute_make_model_year', store=True)
+    model = fields.Char(string='Model', compute='_compute_make_model_year', store=True)
+    year = fields.Char(string='Year', compute='_compute_make_model_year', store=True)
+
+    @api.depends('vin')
+    def _compute_make_model_year(self):
+        for record in self:
+            if record.vin and len(record.vin) >= 6:
+                record.make = record.vin[:2]
+                record.model = record.vin[2:4]
+                record.year = record.vin[4:6]
+            else:
+                record.make = False
+                record.model = False
+                record.year = False
     
        
     @api.model_create_multi
