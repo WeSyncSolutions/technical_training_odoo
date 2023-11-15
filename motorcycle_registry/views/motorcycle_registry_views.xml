@@ -61,8 +61,6 @@
                 <filter name="filter_registry_date" date="registry_date" string="Registration Date"/>
                 <filter name="groupby_registry_date" string="Registration Date" context="{'group_by':'registry_date:day'}"/>
                 <searchpanel>
-                    <field name="license_plate" select="multi" enable_counters="1"/>                    
-                    <field name="vin" select="multi" enable_counters="1"/>
                     <field name="owner_id"/>
                 </searchpanel>                
             </search>
