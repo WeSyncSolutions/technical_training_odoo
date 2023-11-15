@@ -59,10 +59,7 @@
                 <!--field name="last_name" /-->
                 <field name="license_plate" />   
                 <filter name="filter_registry_date" date="registry_date" string="Registration Date"/>
-                <filter name="groupby_registry_date" string="Registration Date" context="{'group_by':'registry_date:day'}"/>
-                <searchpanel>
-                    <field name="owner_id"/>
-                </searchpanel>                
+                <filter name="groupby_registry_date" string="Registration Date" context="{'group_by':'registry_date:day'}"/>              
             </search>
         </field>
     </record>
