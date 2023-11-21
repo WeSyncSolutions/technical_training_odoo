@@ -24,7 +24,7 @@
                         </group>
                         <group>
                             <separator string="Engine Information"/>
-                            <field name="horsepower" />
+                            <field name="horse_power" />
                             <field name="top_speed" />
                             <field name="torque" />                            
                         </group>                        
