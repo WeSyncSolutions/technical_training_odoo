@@ -1,1 +1,1 @@
-from . import motorcycle_stock
+from . import product_template
