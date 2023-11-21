@@ -7,7 +7,7 @@
         <field name="inherit_id" ref="product.product_template_only_form_view"/>
         <field name="arch" type="xml">
             <field name="detailed_type" position = "after">
-                <field name="make" attrs="{'invisible':[('detailed_type','!=','motorcyle')]}">                
+                <field name="make" attrs="{'invisible':[('detailed_type','!=','motorcyle')]}"/>                
             </field>
 <!--Use Xpaht-->
             <xpath expr="//sheet//notebook" position="inside">
