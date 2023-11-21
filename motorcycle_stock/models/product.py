@@ -3,7 +3,7 @@ from odoo import api, fields, models
 class ProductTemplate(models.Model):
     _inherit = 'product.template'
     
-    battery_capcity = fields.Selection(selection=[('xs','Small'),
+    battery_capacity = fields.Selection(selection=[('xs','Small'),
                                                   ('0m','Medium'),
                                                   ('0l','Large'),
                                                   ('xl','Extra Large'),],copy = False)
