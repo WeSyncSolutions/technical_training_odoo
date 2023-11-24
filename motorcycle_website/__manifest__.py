@@ -7,7 +7,7 @@
     'license': 'OPL-1', 
     'images': ['static/description/icon.png'],
     'website': 'https://github.com/william1089/technical_training_odoo.git',
-    'description': """Motorcycle Stock""",
+    'description': """Motorcycle Website""",
     'depends':['motorcycle_stock','website'],
     'data': [
         'views/motorcycle_templates.xml',

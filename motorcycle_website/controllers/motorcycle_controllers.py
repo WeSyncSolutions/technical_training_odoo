@@ -1,7 +1,7 @@
 from odoo import http
 
 class MotorcycleRegistry(http.Controller):
-    @http.route('/compare', auth='public', website=True, sitemap=True)
+    @http.route('/compare', auth='public', website=True, sitemap=False)
     def motorcycle_compare(self,**kw):
         motorcycles=http.request.env['product.template'].search([('detailed_type','=','motorcycle')])
         values={
