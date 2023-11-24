@@ -7,4 +7,4 @@ class MotorcycleRegistry(http.Controller):
         values = {
             'products': motorcycles.with_context(display_default_code=False)
         }
-        return http.request.render('motorcycle_website.motorcycle.compare', values)
+        return http.request.render('motorcycle_website.motorcycle_compare', values)
