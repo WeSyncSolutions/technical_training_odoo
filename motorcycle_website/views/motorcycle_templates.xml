@@ -27,9 +27,6 @@
                             <div class="card-body">
                                 <h5 class="card-title"><t t-out="product.model"/></h5>
                                 <ul class="list-group">
-                                    <li class="list-group-item">
-                                        <img t-att-src="image_data_url(product.image_128)" alt="motorcycle_image">
-                                    </li>
                                     <li class="list-group-item"><t t-out="product.launch_date"/></li>   
                                     <li class="list-group-item"><t t-out="product.range"/></li>
                                     <li class="list-group-item"><t t-out="product.horsepower"/></li> 
