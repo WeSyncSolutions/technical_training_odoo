@@ -29,7 +29,7 @@
                                 <ul class="list-group">
                                     <li class="list-group-item"><t t-out="product.launch_date"/></li>   
                                     <li class="list-group-item"><t t-out="product.range"/></li>
-                                    <li class="list-group-item"><t t-out="product.horsepower"/></li> 
+                                    <li class="list-group-item"><t t-out="product.horse_power"/></li> 
                                     <li class="list-group-item"><t t-out="product.torque"/></li>
                                     <li class="list-group-item"><t t-out="product.top_speed"/></li>  
                                     <li class="list-group-item"><t t-out="product.battery_capacity"/></li>
