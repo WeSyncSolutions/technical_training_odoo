@@ -13,7 +13,6 @@
         'views/motorcycle_templates.xml',
     ],
     'demo': [
-        'demo/product_demo.xml',
     ],
     'application': True,
     'installable': True,
